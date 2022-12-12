@@ -2,9 +2,10 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+ 
 }
 body{
-  overflow-x:hidden !important;
+  overflow-x :hidden;
 }
 html{
    scroll-behavior: smooth;
@@ -35,6 +36,13 @@ header {
  
  border-radius: 10px ;
   overflow: hidden;
+}
+.navBg{
+  position: fixed;
+ top: 0;
+ right: 0;
+ left: 0;
+ z-index: 99;
 }
 .active{
   background-color: #dc3545;
