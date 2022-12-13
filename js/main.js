@@ -1,6 +1,22 @@
 AOS.init({
   duration: 1200,
 });
+
+
+
+document.querySelectorAll("*").forEach((elem) => {
+  if (elem.offsetWidth > document.documentElement.offsetWidth) {
+    console.log("Problem child: ", elem);
+  }
+});
+
+
+
+
+
+
+
+
 //color table
 let bgColors = ["green", "blue", "orange", "red"];
 for (let i = 0; i < bgColors.length; i++) {
@@ -43,7 +59,7 @@ $("#scrollTop").click(function () {
 
 $("document").ready(function () {
   $(".loadingScreen").fadeOut(1000, function () {
-    $("body").css("overflowY", "auto");
+    $("*").css("overflowY", "visible");
   });
 });
 
