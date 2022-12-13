@@ -89,6 +89,15 @@ $(window).scroll(() => {
   });
 });
 
+//typing effect
+
+var typed = new Typed(".element", {
+  // Waits 1000ms after typing "First"
+  strings: ["INTERIOR DESIGNS", "INTERIOR DESIGNS", "PERFECT WORK",'GREAT LAYOUTS' ],
+  typeSpeed: 250,
+  backSpeed: 100,
+  loop: true,
+});
 //increase num on scroll
 
 // let nums = Array.from( document.querySelectorAll('.num'))
