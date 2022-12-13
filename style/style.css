@@ -6,6 +6,19 @@ overflow-y: hidden;
 overflow-x: hidden;
 }
 
+/* //animations */
+.particles{
+width: 100%;
+height: 100%;
+overflow: hidden !important;
+background-color: transparent;
+position: absolute;
+top: 0;
+left: 0;
+
+}
+
+
 body{
   overflow-x :hidden;
 }
@@ -98,6 +111,28 @@ header {
   transition: opacity 0.25s ease-out;
   overflow: hidden;
 }
+
+::-webkit-scrollbar {
+    width: 13px;
+      /* Remove scrollbar space */
+     /* Optional: just make scrollbar invisible */
+}
+::-webkit-scrollbar-track {
+     /* Remove scrollbar space */
+    background: #2a2b2d98;
+  
+  
+     /* Optional: just make scrollbar invisible */
+}
+::-webkit-scrollbar-thumb{
+  background-color: #dc3545;
+  border-radius: 15px;
+  
+  
+}
+
+
+
 .overlay:hover {
   opacity: 1;
 }

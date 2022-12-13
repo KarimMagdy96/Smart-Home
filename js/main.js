@@ -2,8 +2,6 @@ AOS.init({
   duration: 1200,
 });
 
-
-
 document.querySelectorAll("*").forEach((elem) => {
   if (elem.offsetWidth > document.documentElement.offsetWidth) {
     console.log("Problem child: ", elem);
@@ -13,8 +11,9 @@ document.querySelectorAll("*").forEach((elem) => {
 
 
 
-
-
+particlesJS.load("particles-js", "assets/particles.json", function () {
+  console.log("callback - particles.js config loaded");
+});
 
 
 //color table
@@ -93,7 +92,12 @@ $(window).scroll(() => {
 
 var typed = new Typed(".element", {
   // Waits 1000ms after typing "First"
-  strings: ["INTERIOR DESIGNS", "INTERIOR DESIGNS", "PERFECT WORK",'GREAT LAYOUTS' ],
+  strings: [
+    "INTERIOR DESIGNS",
+    "INTERIOR DESIGNS",
+    "PERFECT WORK",
+    "GREAT LAYOUTS",
+  ],
   typeSpeed: 250,
   backSpeed: 100,
   loop: true,
